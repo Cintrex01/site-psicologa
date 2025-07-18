@@ -6,7 +6,9 @@ function Header() {
     <header>
       <div className={styles.header}>
         <div className={styles.logoBox}>
-          <img className={styles.logo} src={logo} alt="logo" />
+          <a href="">
+            <img className={styles.logo} src={logo} alt="logo" />
+          </a>
         </div>
         <div>
           <div className={styles.headerButtons}>
