@@ -1,6 +1,7 @@
 import styles from "./Index.module.css";
 import Footer from "../../components/Footer/Footer";
 import Header from "../../components/Header/Header";
+import Contact from "../../components/Contact/Contact";
 import aboutMeImage from "../../assets/images/aboutMeImage.jpg";
 
 function Index() {
@@ -52,6 +53,7 @@ function Index() {
           />
         </div>
       </div>
+      <Contact />
       <Footer />
     </div>
   );

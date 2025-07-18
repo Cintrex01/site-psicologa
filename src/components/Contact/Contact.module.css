@@ -1,0 +1,125 @@
+.contact {
+  background-color: #e4deca;
+  border-top: 2px solid #000;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  padding-bottom: 70px;
+  padding-top: 70px;
+}
+
+.contactTitle {
+  color: #7b7459;
+  font-size: 20px;
+  padding-bottom: 30px;
+}
+
+.contactLinks {
+  display: flex;
+  flex-direction: column;
+  font-size: 17px;
+}
+
+.link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-decoration: none;
+  color: #000;
+  padding-bottom: 10px;
+}
+
+.link i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 8px;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  margin-left: 100px;
+}
+
+.inputName {
+  padding-bottom: 20px;
+}
+
+.inputName input {
+  width: 100%;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 17px;
+  border-radius: 6px;
+  border: none;
+}
+
+.inputPhoneEmail {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+
+.inputPhoneEmail input {
+  width: 49%;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 17px;
+  border-radius: 6px;
+  border: none;
+}
+
+.inputSelect {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputSelect label {
+  font-size: 17px;
+  padding-bottom: 5px;
+}
+
+.inputSelect select {
+  margin-bottom: 20px;
+  font-size: 17px;
+}
+
+.inputMessage {
+  padding-bottom: 20px;
+}
+
+.inputMessage textarea {
+  font-size: 17px;
+  width: 100%;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 6px;
+  border: none;
+  resize: vertical;
+}
+
+.formButton {
+}
+
+.formButton input {
+  background-color: #8798a9;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.formButton input:hover {
+  background-color: #6e7c89;
+}
