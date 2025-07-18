@@ -105,9 +105,6 @@
   resize: vertical;
 }
 
-.formButton {
-}
-
 .formButton input {
   background-color: #8798a9;
   color: #fff;
@@ -122,4 +119,17 @@
 
 .formButton input:hover {
   background-color: #6e7c89;
+}
+
+.error {
+  color: red;
+  font-size: 0.8rem;
+  margin-top: 4px;
+}
+
+.success {
+  color: green;
+  font-size: 1rem;
+  margin-top: 10px;
+  text-align: center;
 }

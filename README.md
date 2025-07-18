@@ -40,13 +40,21 @@ git clone https://github.com/Cintrex01/site-psicologa.git
 npm install
 ```
 
-3. Inicie o servidor de desenvolvimento:
+3. Crie um arquivo .env na raiz do projeto com as seguintes variáveis do EmailJS:
+
+```
+VITE_EMAILJS_SERVICE_ID=seu_service_id
+VITE_EMAILJS_TEMPLATE_ID=seu_template_id
+VITE_EMAILJS_PUBLIC_KEY=sua_public_key
+```
+
+4. Inicie o servidor de desenvolvimento:
 
 ```
 npm run dev
 ```
 
-4. Acesse no navegador:
+5. Acesse no navegador:
 
 ```
 http://localhost:5173
