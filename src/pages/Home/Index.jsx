@@ -3,6 +3,7 @@ import Footer from "../../components/Footer/Footer";
 import Header from "../../components/Header/Header";
 import Contact from "../../components/Contact/Contact";
 import aboutMeImage from "../../assets/images/aboutMeImage.jpg";
+import FaqList from "../../components/Faq/FaqList";
 
 function Index() {
   return (
@@ -53,6 +54,7 @@ function Index() {
           />
         </div>
       </div>
+      <FaqList />
       <Contact />
       <Footer />
     </div>
