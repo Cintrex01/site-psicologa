@@ -2,6 +2,12 @@
 
 Este projeto é um site profissional para uma psicóloga, com foco em apresentar informações sobre sua atuação, serviços oferecidos, contato e agendamento de consultas. Desenvolvido utilizando React.js, com um design leve, acolhedor e acessível.
 
+## 🔗 Demonstração
+
+Você pode acessar o site hospedado no GitHub Pages através do link abaixo:
+
+👉 [https://cintrex01.github.io/site-psicologa/](https://cintrex01.github.io/site-psicologa/)
+
 ## 🚀 Tecnologias Utilizadas
 
 - React.js
