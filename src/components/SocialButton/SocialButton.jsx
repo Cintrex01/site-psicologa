@@ -21,7 +21,7 @@ const SocialButton = () => {
             transition={{ duration: 0.3 }}
           >
             <motion.a
-              href="https://wa.me/5599999999999"
+              href="https://wa.me/5511988383632?text=Ol%C3%A1%2C%20eu%20estava%20navegando%20pelo%20site%20e%20gostaria%20de%20conversar."
               target="_blank"
               rel="noopener noreferrer"
               className={`${styles.socialIcon} ${styles.whatsapp}`}
@@ -33,7 +33,7 @@ const SocialButton = () => {
             </motion.a>
 
             <motion.a
-              href="https://instagram.com/seuusuario"
+              href="https://www.instagram.com/despertarfloresce/"
               target="_blank"
               rel="noopener noreferrer"
               className={`${styles.socialIcon} ${styles.instagram}`}
