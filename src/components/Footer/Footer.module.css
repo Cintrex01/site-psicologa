@@ -6,3 +6,35 @@
   font-size: 15px;
   border-top: 2px solid #000;
 }
+
+/* Tablets médios e menores (até 1024px) */
+@media screen and (max-width: 1024px) {
+  .footer {
+    font-size: 14px;
+    padding: 18px 30px;
+  }
+}
+
+/* Tablets pequenos (até 768px) */
+@media screen and (max-width: 768px) {
+  .footer {
+    font-size: 13px;
+    padding: 16px 20px;
+  }
+}
+
+/* Smartphones (até 480px) */
+@media screen and (max-width: 480px) {
+  .footer {
+    font-size: 12px;
+    padding: 14px 15px;
+  }
+}
+
+/* Smartphones muito pequenos (até 320px) */
+@media screen and (max-width: 320px) {
+  .footer {
+    font-size: 11px;
+    padding: 12px 10px;
+  }
+}

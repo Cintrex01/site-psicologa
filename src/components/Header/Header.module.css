@@ -1,47 +1,199 @@
-.header {
-  background-color: #f3f0e7;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  height: 150px;
-  padding: 20px;
+/* === Estilos gerais === */
+.headerWrapper {
   width: 100%;
+  background-color: #f3f0e7;
   border-bottom: 2px solid #000;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 100;
 }
 
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+  height: 150px;
+}
+
+/* === Logo === */
 .logoBox {
   display: flex;
   align-items: center;
-  justify-content: end;
-  width: 40%;
-  padding-right: 80px;
 }
-
 .logo {
-  width: 300px;
+  width: 250px;
   height: auto;
+  max-width: 100%;
 }
 
-.headerButtons {
+/* === Menu Desktop === */
+.desktopMenu {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
+  gap: 40px;
 }
-
-.headerButtons div {
-  margin-right: 50px;
-}
-
-.headerButtons div button {
+.menuItem {
   background: none;
-  cursor: pointer;
   border: none;
-  padding: 10px;
+  cursor: pointer;
   font-size: 18px;
+  padding: 10px;
+  transition: all 0.3s ease;
 }
-
-.headerButtons div button:hover {
+.menuItem:hover {
   color: #787575;
   border-bottom: 2px solid #787575;
+}
+
+/* === Botão Hambúrguer === */
+.menuToggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 10px;
+  background: none;
+  border: none;
+  position: relative;
+  width: 45px;
+  height: 45px;
+  justify-content: center;
+  align-items: center;
+  z-index: 101; /* Garante que fique acima de outros elementos */
+}
+
+.menuToggle span {
+  display: block;
+  position: absolute;
+  width: 25px;
+  height: 3px;
+  background-color: #000;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+  transform-origin: center;
+}
+
+.menuToggle span:nth-child(1) {
+  top: 16px;
+}
+
+.menuToggle span:nth-child(2) {
+  top: 21px;
+}
+
+.menuToggle span:nth-child(3) {
+  top: 26px;
+}
+
+/* Estado ativo - formando o X */
+.menuToggle.active span:nth-child(1) {
+  top: 21px;
+  transform: rotate(45deg);
+}
+
+.menuToggle.active span:nth-child(2) {
+  opacity: 0;
+  transform: scale(0);
+}
+
+.menuToggle.active span:nth-child(3) {
+  top: 21px;
+  transform: rotate(-45deg);
+}
+
+/* === Menu Mobile === */
+.mobileMenu {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f3f0e7;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+  z-index: 90;
+}
+.mobileMenu.active {
+  display: flex;
+}
+.mobileMenuItem {
+  background: none;
+  border: none;
+  font-size: 22px;
+  padding: 12px;
+  margin: 10px 0;
+  cursor: pointer;
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+.mobileMenuItem:hover {
+  color: #787575;
+  background-color: rgba(120, 117, 117, 0.1);
+  border-radius: 8px;
+}
+
+/* === Responsividade === */
+
+/* Tablets e telas médias */
+@media screen and (max-width: 1024px) {
+  .header {
+    height: 120px;
+    padding: 20px;
+  }
+  .logo {
+    width: 200px;
+  }
+  .desktopMenu {
+    gap: 30px;
+  }
+  .menuItem {
+    font-size: 16px;
+    padding: 8px;
+  }
+}
+
+/* Telas menores (Mobile) */
+@media screen and (max-width: 768px) {
+  .desktopMenu {
+    display: none;
+  }
+  .menuToggle {
+    display: flex;
+  }
+  .logo {
+    width: 150px;
+  }
+  .header {
+    height: 100px;
+    padding: 15px 20px;
+  }
+}
+
+/* Smartphones */
+@media screen and (max-width: 480px) {
+  .logo {
+    width: 120px;
+  }
+  .menuToggle span {
+    width: 22px;
+    height: 2px;
+  }
+  .mobileMenuItem {
+    font-size: 20px;
+  }
+}
+
+/* Smartphones muito pequenos */
+@media screen and (max-width: 320px) {
+  .logo {
+    width: 100px;
+  }
+  .mobileMenuItem {
+    font-size: 18px;
+  }
 }

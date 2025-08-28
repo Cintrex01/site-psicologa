@@ -1,6 +1,7 @@
 .faqItem {
   padding-bottom: 0.8rem;
-  width: 50rem;
+  width: 100%;
+  max-width: 50rem;
 }
 
 .faqQuestion {
@@ -10,7 +11,7 @@
   cursor: pointer;
   text-align: left;
   width: 100%;
-  padding: 0.5rem;
+  padding: 0.8rem;
   color: #555747;
   display: flex;
   align-items: center;
@@ -18,6 +19,12 @@
   background-color: #f3f0e7;
   border: 1px solid #d5d8dc;
   border-radius: 6px;
+  transition: background-color 0.2s ease;
+  line-height: 1.4;
+}
+
+.faqQuestion:hover {
+  background-color: #eae7dc;
 }
 
 .faqAnswerWrapper {
@@ -34,6 +41,78 @@
 
 .faqAnswer {
   margin-top: 0.5rem;
-  padding-left: 1rem;
+  padding: 0.8rem 1rem;
   color: #555747;
+  line-height: 1.6;
+}
+
+/* Tablets e telas médias (768px - 1024px) */
+@media screen and (max-width: 1024px) {
+  .faqItem {
+    max-width: 45rem;
+  }
+
+  .faqQuestion {
+    font-size: 1rem;
+    padding: 0.7rem;
+  }
+
+  .faqAnswer {
+    padding: 0.7rem 0.8rem;
+  }
+}
+
+/* Tablets pequenos (481px - 768px) */
+@media screen and (max-width: 768px) {
+  .faqItem {
+    max-width: none;
+    width: 100%;
+  }
+
+  .faqQuestion {
+    font-size: 0.95rem;
+    padding: 0.6rem;
+    gap: 8px;
+  }
+
+  .faqAnswer {
+    padding: 0.6rem 0.8rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* Smartphones (até 480px) */
+@media screen and (max-width: 480px) {
+  .faqQuestion {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+    gap: 6px;
+  }
+
+  .faqAnswer {
+    padding: 0.5rem 0.7rem;
+    font-size: 0.85rem;
+    margin-top: 0.3rem;
+  }
+
+  .faqAnswerWrapper.open {
+    max-height: 400px;
+  }
+}
+
+/* Smartphones muito pequenos (até 320px) */
+@media screen and (max-width: 320px) {
+  .faqQuestion {
+    font-size: 0.85rem;
+    padding: 0.4rem;
+  }
+
+  .faqAnswer {
+    padding: 0.4rem 0.6rem;
+    font-size: 0.8rem;
+  }
+
+  .faqAnswerWrapper.open {
+    max-height: 350px;
+  }
 }

@@ -67,3 +67,140 @@
   );
   color: white;
 }
+
+/* Desktop grande (1200px+) */
+@media screen and (min-width: 1200px) {
+  .container {
+    bottom: 30px;
+    right: 30px;
+  }
+
+  .mainButton {
+    width: 70px;
+    height: 70px;
+    font-size: 32px;
+  }
+
+  .socialIcon {
+    width: 70px;
+    height: 70px;
+    font-size: 32px;
+  }
+
+  .socialLinks {
+    margin-bottom: 15px;
+    gap: 12px;
+  }
+}
+
+/* Tablets e telas médias (768px - 1024px) */
+@media screen and (max-width: 1024px) {
+  .container {
+    bottom: 20px;
+    right: 20px;
+  }
+
+  .mainButton {
+    width: 55px;
+    height: 55px;
+    font-size: 28px;
+  }
+
+  .socialIcon {
+    width: 55px;
+    height: 55px;
+    font-size: 28px;
+  }
+
+  .socialLinks {
+    gap: 8px;
+  }
+}
+
+/* Tablets pequenos (481px - 768px) */
+@media screen and (max-width: 768px) {
+  .container {
+    bottom: 20px;
+    right: 15px;
+  }
+
+  .mainButton {
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  .socialIcon {
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  .socialLinks {
+    margin-bottom: 8px;
+    gap: 8px;
+  }
+}
+
+/* Smartphones (até 480px) */
+@media screen and (max-width: 480px) {
+  .container {
+    bottom: 15px;
+    right: 10px;
+  }
+
+  .mainButton {
+    width: 45px;
+    height: 45px;
+    font-size: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  .socialIcon {
+    width: 45px;
+    height: 45px;
+    font-size: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  .socialLinks {
+    margin-bottom: 6px;
+    gap: 6px;
+  }
+
+  /* Reduz área de toque em telas muito pequenas para não atrapalhar */
+  .mainButton:hover {
+    transform: none;
+  }
+
+  .socialIcon:hover {
+    transform: none;
+  }
+}
+
+/* Smartphones muito pequenos (até 320px) */
+@media screen and (max-width: 320px) {
+  .container {
+    bottom: 10px;
+    right: 8px;
+  }
+
+  .mainButton {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+  }
+
+  .socialIcon {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+  }
+
+  .socialLinks {
+    margin-bottom: 5px;
+    gap: 5px;
+  }
+}

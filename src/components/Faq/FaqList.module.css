@@ -9,23 +9,28 @@
   width: 100%;
   padding-top: 70px;
   padding-bottom: 70px;
+  gap: 2rem;
 }
 
 .faqTitle {
   display: flex;
   flex-direction: column;
   margin-right: 10rem;
+  min-width: 200px;
 }
 
 .faqTitle h3 {
   color: #764327;
   font-weight: 600;
+  margin: 0 0 0.5rem 0;
 }
 
 .faqTitle h2 {
   color: #7b7459;
   font-size: 32px;
   font-weight: 600;
+  margin: 0 0 0.2rem 0;
+  line-height: 1.2;
 }
 
 .faqTitle a {
@@ -33,18 +38,109 @@
   cursor: pointer;
   background-image: linear-gradient(184deg, #ba6c45 0%, #764327 100%);
   color: #fff;
-  padding: 5px 30px 5px 30px;
+  padding: 12px 30px;
   border-radius: 6px;
   margin-top: 20px;
-  align-self: center;
+  align-self: flex-start;
   font-size: 16px;
-}
-
-.faqTitle a {
   text-decoration: none;
-  color: #fff;
+  text-align: center;
+  transition: background-image 0.3s ease;
+  white-space: nowrap;
 }
 
 .faqTitle a:hover {
   background-image: linear-gradient(184deg, #ba6c45 0%, #361f12 100%);
+}
+
+.questions {
+  flex: 1;
+  max-width: 800px;
+}
+
+/* Tablets e telas médias (768px - 1024px) */
+@media screen and (max-width: 1024px) {
+  .faqContainer {
+    padding: 40px 20px;
+    gap: 1.5rem;
+  }
+
+  .faqTitle {
+    margin-right: 5rem;
+  }
+
+  .faqTitle h2 {
+    font-size: 28px;
+  }
+}
+
+/* Tablets pequenos (481px - 768px) */
+@media screen and (max-width: 768px) {
+  .faqContainer {
+    flex-direction: column;
+    padding: 40px 15px;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .faqTitle {
+    margin-right: 0;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  .faqTitle h2 {
+    font-size: 24px;
+  }
+
+  .faqTitle a {
+    align-self: center;
+    padding: 10px 25px;
+    font-size: 15px;
+  }
+
+  .questions {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+/* Smartphones (até 480px) */
+@media screen and (max-width: 480px) {
+  .faqContainer {
+    padding: 30px 10px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .faqTitle h3 {
+    font-size: 14px;
+  }
+
+  .faqTitle h2 {
+    font-size: 20px;
+  }
+
+  .faqTitle a {
+    padding: 8px 20px;
+    font-size: 14px;
+    margin-top: 15px;
+  }
+}
+
+/* Smartphones muito pequenos (até 320px) */
+@media screen and (max-width: 320px) {
+  .faqContainer {
+    padding: 20px 5px;
+  }
+
+  .faqTitle h2 {
+    font-size: 18px;
+  }
+
+  .faqTitle a {
+    padding: 6px 15px;
+    font-size: 13px;
+  }
 }
